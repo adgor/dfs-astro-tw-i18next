@@ -18,5 +18,10 @@
   "home": {
     "title": "Bienvenue sur mon super site web !",
     "subtitle": "Ceci est une chaine de charactères <0>plus compliquée</0> à traduire, il y a des <1>éléments html</1>, comme <2>un super lien</2> par exemple !"
-  }
+  },
+  "hero": {
+    "subtitle": "Für einen glanzvollen Auftritt Ihrer Liegenschaft"
+  },
+  "contact": "Kontakt",
+  "services": "Erfahren Sie mehr"
 }
