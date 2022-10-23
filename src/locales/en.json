@@ -22,6 +22,23 @@
   "hero": {
     "subtitle": "For a glamorous appearance of your property"
   },
+  "cleaning": {
+    "title": "cleaning",
+    "body": "A well cared-for property and clean rooms can make a major contribution to your company’s positive image. Why not simply put us in charge of this task?"
+  },
+  "property": {
+    "title": "Property maintenance",
+    "body": "When it comes to the day-to-day handling of infrastructure a friendly, farsighted and efficient caretaker is indispensable. His all-round capabilities come to the fore in a diverse range of specialist areas, all requiring mutual trust."
+  },
+  "green": {
+    "title": "Green areas",
+    "body": "Plants are more than just a feast for the eyes. Simply looking at green plants can help you to relax without becoming tired. Providing loving, professional care is a task we find satisfying and is our top priority."
+  },
+  "transport": {
+    "title": "Relocation | Transport",
+    "body": "We coordinate and plan relocations and transports, carrying them out on schedule and with the greatest care and attention. We have the required know-how and conscientiousness to transport even bulky furniture; fragile materials and valuable items."
+  },
+  "moreDetails": "more details",
   "contact": "contact",
   "services": "services"
 }

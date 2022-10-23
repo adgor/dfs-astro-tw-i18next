@@ -31,11 +31,15 @@ import { t } from "i18next";
         DFS Facility Services GmbH
       </h2>
       <p class="pr-5 mb-5 text-base text-gray-700 md:text-lg">
-      {t("hero.subtitle")}
+        {t("hero.subtitle")}
       </p>
       <div class="flex items-center space-x-3">
-        <Button link="/contact" iconSpan={'hidden'} >{t("contact")}</Button>
-        <Button link="/contact" btnColorStyle={'border border-brand bg-transparent hover:bg-brand/10 text-brand'} iconSpan={'hidden'} >{t("services")}</Button>
+        <Button link="/contact" iconSpan={"hidden"}>{t("contact")}</Button>
+        <Button
+          link="#services"
+          btnColorStyle={"border border-brand bg-transparent hover:bg-brand/10 text-brand"}
+          iconSpan={"hidden"}>{t("services")}</Button
+        >
       </div>
     </div>
   </div>

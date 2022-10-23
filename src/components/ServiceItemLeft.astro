@@ -1,0 +1,32 @@
+---
+import Button from './Button.astro';
+
+import { t } from "i18next";
+export interface Props {
+  title: string;
+  body: string;
+  link: string;
+}
+const {
+  link, title, body
+} = Astro.props;
+---
+
+<div
+  class="grid flex-col-reverse items-center grid-cols-1 md:grid-cols-2 gap-y-10 md:gap-y-32 gap-x-10 md:gap-x-24"
+>
+  <div class="order-none md:order-2">
+    <h2
+      class="mb-4 text-2xl font-extrabold tracking-tight text-center text-black md:leading-tight sm:text-left md:text-4xl"
+    >
+    {title}
+    </h2>
+    <p class="mb-5 text-base text-center text-gray-600 sm:text-left md:text-lg">
+    {body}
+    </p>
+    <Button iconSpan={'hidden'} link={link}   btnColorStyle={'bg-transparent px-0 py-0 capitalize text-base font-medium hover:text-brand'}>
+ {t("moreDetails")}   
+    </Button>
+  </div>
+  <div class="w-full h-full py-48 bg-gray-200"></div>
+</div>

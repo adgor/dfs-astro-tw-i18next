@@ -22,6 +22,23 @@
   "hero": {
     "subtitle": "Für einen glanzvollen Auftritt Ihrer Liegenschaft"
   },
+  "cleaning": {
+    "title": "Reinigung",
+    "body": "Eine gepflegte Liegenschaft und saubere Räume tragen wesentlich zum Image Ihrer Firma bei. Übertragen Sie diese Verantwortung uns."
+  },
+  "property": {
+    "title": "Hauswartung",
+    "body": "Ein freundlicher, umsichtiger und effizienter Hauswart ist unentbehrlich im täglichen Umgang mit der Infrastruktur. Seine Allrounder-Funktion ist in den unterschiedlichsten Fachgebieten gefragt und setzt gegenseitiges Vertrauen voraus."
+  },
+  "green": {
+    "title": "Begrünung",
+    "body": "Pflanzen sind mehr als nur eine Augen weide. Alleine beim Anblick von grünen Pflanzen entspannt sich der Mensch. Die liebevolle und fachge rechte Pflege macht uns Freude und ist das oberste Gebot."
+  },
+  "transport": {
+    "title": "Umzug | Transport",
+    "body": "Wir koordinieren und planen Umzüge und Transporte und führen diese mit grosser Sorgfalt und Umsicht termingerecht aus. Selbst sperrige Möbel, zerbrechliche Materialien und kostbare Wertgegenstände befördern wir mit der nötigen Fachkenntnis und Sorgfalt."
+  },
+  "moreDetails": "Weitere Details",
   "contact": "Kontakt",
   "services": "Erfahren Sie mehr"
 }

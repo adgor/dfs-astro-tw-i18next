@@ -1,0 +1,15 @@
+---
+import ServiceItemLeft from "./ServiceItemLeft.astro";
+import ServiceItemRight from "./ServiceItemRight.astro";
+import { t } from "i18next";
+---
+
+<section class="  
+px-4 py-24 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8
+">
+<ServiceItemRight  link="/cleaning" title={t("cleaning.title")} body={t("cleaning.body")} />
+<ServiceItemLeft link="/property-maintenance" title={t("property.title")} body={t("property.body")} />
+<ServiceItemRight  link="/green" title={t("green.title")} body={t("green.body")} />
+<ServiceItemLeft link="/transport" title={t("transport.title")} body={t("transport.body")} />
+</section>
+
