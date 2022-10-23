@@ -1,31 +1,104 @@
 ---
 import { Icon } from "astro-icon";
-const currentYear = new Date().getFullYear();
+
+import { contacts, socialLinks } from "../../config/links";
 ---
 
-<footer class="bg-brand-richBlack py-24 text-xs relative">
+<footer class="text-brand">
   <div
-    class="px-4 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8"
+    class="px-4 pt-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8"
   >
-    <div class="container text-gray-700 grid grid-cols-1 md:grid-cols-3 px-4 text-center">
-      <div class="flex space-x-4 items-center justify-center md:justify-start">
-        <p>kontakt</p>
+    <div class="grid gap-10 row-gap-6 mb-8 sm:grid-cols-2 lg:grid-cols-4">
+      <div class="sm:col-span-2">
+        <a
+          href="/"
+          aria-label="Go home"
+          title="Company"
+          class="inline-flex items-center"
+        >
+          <Icon name="logo-icon-dfs-fs" class="w-full h-28 md:h-32" />
+        </a>
+        <!-- <div class="mt-6 lg:max-w-sm">
+        <p class="text-sm text-gray-400">
+          Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.
+        </p>
+        
+      </div> -->
       </div>
-      <div
-        class="flex order-first md:order-none items-center justify-center md:mb-0 mb-8">
-     <a
-        href="/"
-        aria-label="Go home"
-        title="Company"
-      >
-        <Icon name="mdi:discord" class="h-10 w-16" />
-      </a>  </div>
-     
-      <div
-        class="flex space-x-4 items-center justify-center mt-2 md:mt-0 md:justify-end text-gray-500"
-      >
-        <p>© {currentYear}. All rights reserved.</p>
+      <div class="space-y-2 text-sm">
+        <p class="text-base font-bold tracking-wide">Contacts</p>
+
+        {
+          contacts.map(({ name, title, href }) => (
+            <div class="flex">
+              <p class="mr-1 font-semibold">{name}</p>
+              <a
+                href={href}
+                target={(href.includes('http')) ? '_blank' : undefined}
+                rel="noopener noreferrer"
+                aria-label="Our address"
+                title="Our address"
+                class="transition-colors duration-300
+          text-brand-yellowLighten hover:text-brand/80 "
+              >
+                {title}
+              </a>
+            </div>
+          ))
+        }
       </div>
+      <div>
+        <span class="text-base font-bold tracking-wide">Social</span>
+        <div class="flex items-center mt-1 space-x-3">
+          {
+            socialLinks.map((link) => (
+              <a
+                class=" transition-colors duration-300 hover:text-brand/80"
+                href={link.url}
+              >
+                <span class="sr-only">{link.description}</span>
+                <Icon class="h-6 w-6" name={link.icon} />
+              </a>
+            ))
+          }
+        </div>
+        <p class="mt-2 text-sm">
+          Bacon ipsum dolor amet short ribs pig sausage prosciutto chicken spare
+          ribs.
+        </p>
+      </div>
+    </div>
+    <div
+      class="flex text-brand/80 flex-col-reverse border-brand/40 justify-between pt-5 pb-10 border-t lg:flex-row"
+    >
+      <p class="text-sm ">
+        © Copyright 2022 DFS GmbH. All Rights Reserved
+      </p>
+      <ul
+        class="flex flex-col mb-3 space-y-2 lg:mb-0 sm:space-y-0 sm:space-x-5 sm:flex-row"
+      >
+        <li>
+          <a
+            href="/"
+            class="text-sm transition-colors duration-300 hover:text-brand"
+            >F.A.Q</a
+          >
+        </li>
+        <li>
+          <a
+            href="/"
+            class="text-sm  transition-colors duration-300 hover:text-brand"
+            >Privacy Policy</a
+          >
+        </li>
+        <li>
+          <a
+            href="/"
+            class="text-sm  transition-colors duration-300 hover:text-brand"
+            >Terms &amp; Conditions</a
+          >
+        </li>
+      </ul>
     </div>
   </div>
 </footer>

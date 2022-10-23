@@ -40,3 +40,24 @@ export const socialLinks = [
   //     "icon": "mdi:discord"
   // },
 ];
+
+export const contacts = [
+  {
+    name: "Phone:",
+    title: "+41 41 525 30 05",
+    icon: "mdi:phone",
+    href: "tel:++41 41 525 30 05",
+  },
+  {
+    name: "Email:",
+    title: "info@dfsfacility.ch",
+    icon: "mdi:email",
+    href: "mailto:info@dfsfacility.ch",
+  },
+  {
+    name: "Address:",
+    title: "Mühlehofstrasse 7a",
+    icon: "mdi:home",
+    href: "https://goo.gl/maps/Mhc8X2gyo2FavWqw8",
+  },
+];
