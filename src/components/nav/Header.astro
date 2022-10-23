@@ -89,17 +89,15 @@ const navigationItems = {
       </button>
 
       <nav class="">
-        <ul class="p-3 space-y-6 border-b border-[#3385FF] md:p-5">
+        <ul class="p-3 space-y-6 border-b border-white/10 md:p-5">
           {
             Object.keys(navigationItems).map((key) => {
               let className =
                 " text-white uppercase text-sm underline-offset-2 tracking-wider decoration-4 font-semibold";
               if (isCurrentPath(localizePath(key, i18next.language))) {
-                className +=
-                  " text-xl tracking-wide ";
+                className += " text-xl tracking-wide ";
               } else {
-                className +=
-                  "  text-xl opacity-75 ";
+                className += "  text-xl opacity-75 ";
               }
               return (
                 <li>
@@ -114,13 +112,11 @@ const navigationItems = {
             })
           }
         </ul>
-        <p
-          class="p-3 tracking-wide text-white/75 "
-        >
-          <a href="mailto:info@admin.com">info@admin.com</a>
+        <p class="p-3 tracking-wide text-white/75">
+          <a href="mailto:info@dfsfacility.ch">info@dfsfacility.ch</a>
         </p>
         <LanguageSelector
-          class=" p-2 mr-3 font-semibold text-white bg-transparent hover:bg-brand/80 border-2"
+          class="p-2 mr-3 font-semibold text-white bg-transparent hover:bg-brand/80 border-2"
         />
       </nav>
     </div>

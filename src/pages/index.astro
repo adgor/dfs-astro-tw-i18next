@@ -2,11 +2,13 @@
 import LayoutWithHeader from "../layouts/LayoutWithHeader.astro";
 import { t, changeLanguage } from "i18next";
 import { Trans } from "astro-i18next/components";
+import Hero from "../components/Hero.astro";
 
 changeLanguage("en");
 ---
 
 <LayoutWithHeader title="titl" description="desc">
+  <Hero />
   <h1 class="text-red-400">{t("home.title")}</h1>
   <p class="text-gray-900">
     <Trans i18nKey="home.subtitle">
