@@ -7,7 +7,7 @@ module.exports = {
         bkg: "#171819",
         muted: "#c9cbcf",
         accent: "#007DB8",
-        brand: "#0460D9",
+        brand: "#394EA1",
         brandRed: "#ed1c24",
         brandDark: "#021F59",
         brandLight: "#0468BF",
