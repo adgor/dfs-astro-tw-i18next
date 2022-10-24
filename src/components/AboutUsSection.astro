@@ -1,0 +1,54 @@
+---
+import Button from "./Button.astro";
+import { t } from "i18next";
+---
+
+<section class="bg-brand">
+<div
+  class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20"
+>
+  <div
+    class="flex flex-col max-w-screen-lg overflow-hidden bg-brand border rounded shadow-sm lg:flex-row sm:mx-auto"
+  >
+    <div class="relative lg:w-1/2">
+      <img
+        src="https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+        alt=""
+        class="object-cover w-full lg:absolute h-80 lg:h-full"
+      />
+      <svg
+        class="absolute top-0 right-0 hidden h-full text-white lg:inline-block"
+        viewBox="0 0 20 104"
+        fill="currentColor"
+      >
+        <polygon
+          points="17.3036738 5.68434189e-14 20 5.68434189e-14 20 104 0.824555778 104"
+        ></polygon>
+      </svg>
+    </div>
+    <div
+      class="flex flex-col justify-center p-8 bg-white lg:p-16 lg:pl-10 lg:w-1/2"
+    >
+      <div>
+        <p
+          class="inline-block  mb-4 text-xs font-semibold tracking-wider text-teal-900 uppercase rounded-full bg-teal-accent-400"
+        >
+           {t("aboutSection.message")}
+        </p>
+      </div>
+      <h5 class="mb-3 text-3xl font-extrabold leading-none sm:text-4xl">
+           {t("aboutSection.title")}
+      </h5>
+      <p class="mb-5 text-gray-800">
+           {t("aboutSection.body")}
+      </p>
+      <div class="flex items-center">
+      <Button iconSpan={'hidden'} link="/about"> 
+           {t("moreDetails")}
+      </Button>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
